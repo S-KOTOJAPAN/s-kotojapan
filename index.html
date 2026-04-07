@@ -1,120 +1,357 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S-KOTO JAPAN LLC | Official Site</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #222;
-      background-color: #fff;
-      line-height: 1.8;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-      background-color: #fff;
-    }
-
-    header img {
-      width: 220px;
-      height: auto;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      margin-top: 15px;
-      letter-spacing: 1px;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      border-left: 5px solid #b50000;
-      padding-left: 10px;
-      margin-bottom: 20px;
-      letter-spacing: 0.5px;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #111;
-      color: #fff;
-      padding: 40px 10px;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #b50000;
-      text-decoration: none;
-    }
-
-    @media (max-width: 600px) {
-      header img {
-        width: 160px;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-      section {
-        margin: 60px auto;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-KOTO JAPAN LLC | 合同会社 S-KOTO JAPAN</title>
+    <meta name="description"
+        content="S-KOTO JAPAN LLC - 自動車・民生用部品等の各種ハーネス、電子部品の提供。グローバルサプライチェーンとトータルアウトソーシングでビジネスをサポート。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <img src="＜確定＞S-KOTO JAPAN ロゴ.png" alt="S-KOTO JAPAN LLC ロゴ">
-    <h1>S-KOTO JAPAN LLC</h1>
-  </header>
 
-  <section id="about">
-    <h2>会社概要 / Company Profile</h2>
-    <p>
-      S-KOTO JAPAN LLCは日本の伝統と現代技術を世界へ届ける貿易商社です。<br>
-      私たちは「日本品質」をキーワードに、世界中のパートナーと共に持続的な成長を目指します。
-    </p>
-  </section>
+<body class="lang-ja-active">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <img src="images/logo.jpg" alt="S-KOTO JAPAN Logo" class="brand-logo">
+            </div>
 
-  <section id="business">
-    <h2>事業内容 / Business</h2>
-    <p>
-      ・輸出入業務<br>
-      ・OEM製造および企画支援<br>
-      ・海外ブランドの日本市場展開・代理販売
-    </p>
-  </section>
+            <div class="right-section">
+                <nav class="nav-menu" id="nav-menu">
+                    <a href="#business" class="nav-link" onclick="closeMenu()">
+                        <span class="lang-ja">事業内容</span><span class="lang-en">Business</span>
+                    </a>
+                    <a href="#advantage" class="nav-link" onclick="closeMenu()">
+                        <span class="lang-ja">強み</span><span class="lang-en">Advantage</span>
+                    </a>
+                    <a href="#profile" class="nav-link" onclick="closeMenu()">
+                        <span class="lang-ja">会社概要</span><span class="lang-en">Profile</span>
+                    </a>
+                    <a href="#contact" class="nav-link" onclick="closeMenu()">
+                        <span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span>
+                    </a>
+                </nav>
 
-  <section id="products">
-    <h2>取扱商品 / Products</h2>
-    <p>
-      矢崎総業、住友電装、TEなどをはじめとした高品質な日本ブランド製品を取り扱っています。
-    </p>
-  </section>
+                <div class="header-actions">
+                    <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
+                        <span class="lang-ja">EN</span><span class="lang-en">JP</span>
+                    </button>
+                    <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <section id="contact">
-    <h2>お問い合わせ / Contact</h2>
-    <p>
-      メールでのお問い合わせはこちらまでお願いいたします。<br>
-      <a href="mailto:k-shiroki@s-koto.com">k-shiroki@s-koto.com</a>
-    </p>
-  </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Connecting Values, Delivering Solutions.</h1>
+                <p>
+                    <span class="lang-ja">世界を繋ぎ、ビジネスを最適化する<br>グローバルアウトソーシングパートナー</span>
+                    <span class="lang-en">Connecting the world and optimizing business<br>Your global outsourcing
+                        partner</span>
+                </p>
+                <a href="#business" class="cta-button">
+                    <span class="lang-ja">事業内容を見る</span><span class="lang-en">View Business Details</span>
+                </a>
+            </div>
+        </section>
 
-  <footer>
-    <p>© 2025 S-KOTO JAPAN LLC. All rights reserved.</p>
-  </footer>
+        <section id="business" class="section bg-light">
+            <div class="container fade-in">
+                <div class="section-header">
+                    <h2><span class="lang-ja">事業内容</span><span class="lang-en">Business Details</span></h2>
+                </div>
+
+                <div class="business-card">
+                    <div class="card-content">
+                        <h3><span class="lang-ja">1. コネクター／電子部品</span><span class="lang-en">1. Connector / Electronic
+                                Components</span></h3>
+                        <p>
+                            <span class="lang-ja">より多くのコネクタ製品及び電子部品を取り扱っています。</span>
+                            <span class="lang-en">We are handling much more Connector manufactures products and
+                                Electronic components.</span>
+                        </p>
+                        <div class="image-wrapper shadow">
+                            <img src="images/brands.jpg" alt="Partner Brands">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="business-card">
+                    <div class="card-content">
+                        <h3><span class="lang-ja">2. 組み立て</span><span class="lang-en">2. Assembly</span></h3>
+                        <ul class="feature-list">
+                            <li>
+                                <span class="lang-ja">自動車・民生用・農業機械用・重工業用部品の各種ハーネスに対応</span>
+                                <span class="lang-en">We are capable of various harness for automotive, consumer,
+                                    agriculture machine and heavy industrial using parts.</span>
+                            </li>
+                            <li>
+                                <span class="lang-ja">マルチパートナー体制で様々な端末アプリケーターに対応可能</span>
+                                <span class="lang-en">We can handle various terminal applicators by multi-partner
+                                    system.</span>
+                            </li>
+                            <li>
+                                <span class="lang-ja">低いイニシャルコストで小ロット対応が可能</span>
+                                <span class="lang-en">It is possible to handle small LOT with low initial cost.</span>
+                            </li>
+                            <li>
+                                <span class="lang-ja">圧着アプリケーターや除去工具も取り扱っています</span>
+                                <span class="lang-en">We also handle crimp applicators and removal tools.</span>
+                            </li>
+                        </ul>
+                        <div class="assembly-images">
+                            <div class="image-wrapper shadow"><img src="images/assembly1.jpg" alt="Harness Assembly 1">
+                            </div>
+                            <div class="image-wrapper shadow"><img src="images/assembly2.jpg" alt="Harness Assembly 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantage" class="section">
+            <div class="container fade-in">
+                <div class="section-header">
+                    <h2><span class="lang-ja">強み</span><span class="lang-en">Advantage</span></h2>
+                </div>
+
+                <div class="grid-content">
+                    <div class="advantage-card flex-row">
+                        <div class="text-content">
+                            <h3><span class="lang-ja">1. グローバルサプライチェーン</span><span class="lang-en">1. Global Supply
+                                    Chain</span></h3>
+                            <p>
+                                <span class="lang-ja">韓国やドイツのグループ企業のほか、各国パートナーとの製品調達によりビジネスをサポートします。</span>
+                                <span class="lang-en">We support your business through product sourcing with various
+                                    countries partners including our group company in Korea and Germany.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card flex-row">
+                        <div class="text-content">
+                            <h3><span class="lang-ja">2. トータルアウトソーシング、在庫管理、配送管理</span><span class="lang-en">2. Total
+                                    outsourcing, Inventory control, Delivery</span></h3>
+                            <p>
+                                <span class="lang-ja">人件費を削減し、倉庫のスペースを節約できます。</span>
+                                <span class="lang-en">You can reduce the labor cost and save space of warehouse.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card full-width">
+                        <div class="text-content">
+                            <h3><span class="lang-ja">3. ワンストップソリューション</span><span class="lang-en">3. One-stop
+                                    solution</span></h3>
+                            <p>
+                                <span class="lang-ja">大手メーカーの電子部品を多数取り扱っています。複数の製品もまとめて見積もり、納品が可能です。</span>
+                                <span class="lang-en">We are handling numbers of electronic components from major
+                                    manufacturers. We can get quotation and deliver all together even those are from
+                                    multiple manufactures.</span>
+                            </p>
+                        </div>
+                        <div class="image-wrapper no-shadow img-small mt-4">
+                            <img src="images/1stop.jpg" alt="1 Stop Solutions">
+                        </div>
+                    </div>
+
+                    <div class="advantage-card full-width">
+                        <div class="text-content">
+                            <h3><span class="lang-ja">4. 多くの協力会社、工場</span><span class="lang-en">4. Many cooperative
+                                    companies and factories</span></h3>
+                            <p>
+                                <span
+                                    class="lang-ja">多くの協力企業や工場と取引があります。特定の企業と取引がない場合は我々を利用できます。また海外に多くのサプライヤーがいるため低コストで提供できます。</span>
+                                <span class="lang-en">We have business with many cooperative companies and factories.
+                                    Even if you do not have business with certain manufactures, we can lend our account.
+                                    Also, we have a lot of suppliers in overseas, so we can provide with low
+                                    cost.</span>
+                            </p>
+                        </div>
+                        <div class="image-wrapper shadow mt-4">
+                            <img src="images/cooperation.jpg" alt="Cooperation Network">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section: Changed to Light Theme -->
+        <section id="profile" class="section bg-light-blue text-main">
+            <div class="container fade-in">
+                <div class="section-header">
+                    <h2 class="text-main"><span class="lang-ja">会社概要</span><span class="lang-en">Company Profile</span>
+                    </h2>
+                </div>
+
+                <table class="profile-table light-theme">
+                    <tbody>
+                        <tr>
+                            <th><span class="lang-ja">社名</span><span class="lang-en">Company name</span></th>
+                            <td><span class="lang-ja">合同会社 S-KOTO JAPAN</span><span class="lang-en">S-KOTO JAPAN
+                                    LLC</span></td>
+                        </tr>
+                        <tr>
+                            <th><span class="lang-ja">設立</span><span class="lang-en">Established</span></th>
+                            <td><span class="lang-ja">2023年7月</span><span class="lang-en">July 2023</span></td>
+                        </tr>
+                        <tr>
+                            <th><span class="lang-ja">資本金</span><span class="lang-en">Capital</span></th>
+                            <td><span class="lang-ja">1,000千円</span><span class="lang-en">1,000,000 yen</span></td>
+                        </tr>
+                        <tr>
+                            <th><span class="lang-ja">所在地</span><span class="lang-en">Location</span></th>
+                            <td><span class="lang-ja">山口県長門市深川湯本1323-1</span><span class="lang-en">1323-1 Fukawayumoto,
+                                    Nagato City, Yamaguchi Pref. JAPAN</span></td>
+                        </tr>
+                        <tr>
+                            <th><span class="lang-ja">代表</span><span class="lang-en">CEO</span></th>
+                            <td><span class="lang-ja">白木浩一郎</span><span class="lang-en">Koichiro Shiroki</span></td>
+                        </tr>
+                        <tr>
+                            <th><span class="lang-ja">電話</span><span class="lang-en">TEL</span></th>
+                            <td><a href="tel:09047046308" class="text-link">090-4704-6308</a></td>
+                        </tr>
+                        <tr>
+                            <th><span class="lang-ja">メール</span><span class="lang-en">Email</span></th>
+                            <td><a href="mailto:k-shiroki@s-koto.com" class="text-link">k-shiroki@s-koto.com</a></td>
+                        </tr>
+                        <tr>
+                            <th><span class="lang-ja">事業</span><span class="lang-en">Business</span></th>
+                            <td><span class="lang-ja">自動車部品の輸出入、製造販売、貿易業、売買業、問屋業、代理業、仲介業、及びコンサルティング業</span><span
+                                    class="lang-en">Import/Export, manufacture and sale of automotive parts, Trading,
+                                    Buying and Selling, Wholesale, Agency, Intermediary and Consulting.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container fade-in">
+                <div class="section-header">
+                    <h2><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact Us</span></h2>
+                </div>
+                <div class="contact-form-wrapper">
+                    <p class="text-center" style="margin-bottom: 2rem;">
+                        <span class="lang-ja">製品・サービスに関するご質問や、お取引についてのご相談はお気軽にお問い合わせください。</span>
+                        <span class="lang-en">Please feel free to contact us with any questions about our
+                            products/services, or to discuss business opportunities.</span>
+                    </p>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('お問い合わせを受け付けました。（テスト用）');">
+                        <div class="form-group">
+                            <label for="name">
+                                <span class="lang-ja">お名前</span><span class="lang-en">Name</span>
+                                <span class="required"><span class="lang-ja">必須</span><span
+                                        class="lang-en">Req</span></span>
+                            </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <span class="lang-ja">メールアドレス</span><span class="lang-en">Email</span>
+                                <span class="required"><span class="lang-ja">必須</span><span
+                                        class="lang-en">Req</span></span>
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">
+                                <span class="lang-ja">お問い合わせ内容</span><span class="lang-en">Message</span>
+                                <span class="required"><span class="lang-ja">必須</span><span
+                                        class="lang-en">Req</span></span>
+                            </label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="cta-button">
+                                <span class="lang-ja">送信する</span><span class="lang-en">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 S-KOTO JAPAN LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle Logic
+        function toggleLanguage() {
+            const body = document.body;
+            if (body.classList.contains('lang-ja-active')) {
+                body.classList.remove('lang-ja-active');
+                body.classList.add('lang-en-active');
+                document.documentElement.lang = 'en';
+            } else {
+                body.classList.remove('lang-en-active');
+                body.classList.add('lang-ja-active');
+                document.documentElement.lang = 'ja';
+            }
+        }
+
+        // Mobile Menu Logic
+        const menu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        function toggleMenu() {
+            menu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            menu.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Smoth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
