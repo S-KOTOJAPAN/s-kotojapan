@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S-KOTO JAPAN LLC | 合同会社 S-KOTO JAPAN</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <meta name="description"
         content="S-KOTO JAPAN LLC - 自動車・民生用部品等の各種ハーネス、電子部品の提供。グローバルサプライチェーンとトータルアウトソーシングでビジネスをサポート。">
+    <meta property="og:title" content="S-KOTO JAPAN LLC | 合同会社 S-KOTO JAPAN">
+    <meta property="og:description" content="自動車・民生用部品等の各種ハーネス、電子部品の提供。グローバルサプライチェーンとトータルアウトソーシングでビジネスをサポート。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta name="twitter:card" content="summary">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -23,23 +29,26 @@
             <div class="right-section">
                 <nav class="nav-menu" id="nav-menu">
                     <a href="#business" class="nav-link" onclick="closeMenu()">
-                        <span class="lang-ja">事業内容</span><span class="lang-en">Business</span>
+                        <span class="lang-ja">事業内容</span><span class="lang-en">Business</span><span class="lang-ko">사업 내용</span><span class="lang-zh">业务内容</span>
                     </a>
                     <a href="#advantage" class="nav-link" onclick="closeMenu()">
-                        <span class="lang-ja">強み</span><span class="lang-en">Advantage</span>
+                        <span class="lang-ja">強み</span><span class="lang-en">Advantage</span><span class="lang-ko">강점</span><span class="lang-zh">优势</span>
                     </a>
                     <a href="#profile" class="nav-link" onclick="closeMenu()">
-                        <span class="lang-ja">会社概要</span><span class="lang-en">Profile</span>
+                        <span class="lang-ja">会社概要</span><span class="lang-en">Profile</span><span class="lang-ko">회사 소개</span><span class="lang-zh">公司简介</span>
                     </a>
                     <a href="#contact" class="nav-link" onclick="closeMenu()">
-                        <span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span>
+                        <span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span><span class="lang-ko">문의하기</span><span class="lang-zh">联系我们</span>
                     </a>
                 </nav>
 
                 <div class="header-actions">
-                    <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
-                        <span class="lang-ja">EN</span><span class="lang-en">JP</span>
-                    </button>
+                    <select id="lang-select" class="lang-select" onchange="setLanguage(this.value)">
+                        <option value="ja">日本語</option>
+                        <option value="en">English</option>
+                        <option value="ko">한국어</option>
+                        <option value="zh">中文</option>
+                    </select>
                     <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
                         <span class="bar"></span>
                         <span class="bar"></span>
@@ -56,11 +65,12 @@
                 <h1>Connecting Values, Delivering Solutions.</h1>
                 <p>
                     <span class="lang-ja">世界を繋ぎ、ビジネスを最適化する<br>グローバルアウトソーシングパートナー</span>
-                    <span class="lang-en">Connecting the world and optimizing business<br>Your global outsourcing
-                        partner</span>
+                    <span class="lang-en">Connecting the world and optimizing business<br>Your global outsourcing partner</span>
+                    <span class="lang-ko">세계를 연결하고 비즈니스를 최적화하는<br>글로벌 아웃소싱 파트너</span>
+                    <span class="lang-zh">连接世界，优化业务<br>您的全球外包合作伙伴</span>
                 </p>
                 <a href="#business" class="cta-button">
-                    <span class="lang-ja">事業内容を見る</span><span class="lang-en">View Business Details</span>
+                    <span class="lang-ja">事業内容を見る</span><span class="lang-en">View Business Details</span><span class="lang-ko">사업 내용 보기</span><span class="lang-zh">查看业务详情</span>
                 </a>
             </div>
         </section>
@@ -68,17 +78,17 @@
         <section id="business" class="section bg-light">
             <div class="container fade-in">
                 <div class="section-header">
-                    <h2><span class="lang-ja">事業内容</span><span class="lang-en">Business Details</span></h2>
+                    <h2><span class="lang-ja">事業内容</span><span class="lang-en">Business Details</span><span class="lang-ko">사업 내용</span><span class="lang-zh">业务详情</span></h2>
                 </div>
 
                 <div class="business-card">
                     <div class="card-content">
-                        <h3><span class="lang-ja">1. コネクター／電子部品</span><span class="lang-en">1. Connector / Electronic
-                                Components</span></h3>
+                        <h3><span class="lang-ja">1. コネクター／電子部品</span><span class="lang-en">1. Connector / Electronic Components</span><span class="lang-ko">1. 커넥터 / 전자 부품</span><span class="lang-zh">1. 连接器 / 电子元件</span></h3>
                         <p>
                             <span class="lang-ja">より多くのコネクタ製品及び電子部品を取り扱っています。</span>
-                            <span class="lang-en">We are handling much more Connector manufactures products and
-                                Electronic components.</span>
+                            <span class="lang-en">We are handling much more Connector manufactures products and Electronic components.</span>
+                            <span class="lang-ko">더 많은 커넥터 제품 및 전자 부품을 취급하고 있습니다.</span>
+                            <span class="lang-zh">我们经营更多的连接器产品和电子元件。</span>
                         </p>
                         <div class="image-wrapper shadow">
                             <img src="images/brands.jpg" alt="Partner Brands">
@@ -88,25 +98,31 @@
 
                 <div class="business-card">
                     <div class="card-content">
-                        <h3><span class="lang-ja">2. 組み立て</span><span class="lang-en">2. Assembly</span></h3>
+                        <h3><span class="lang-ja">2. 組み立て</span><span class="lang-en">2. Assembly</span><span class="lang-ko">2. 조립</span><span class="lang-zh">2. 组装</span></h3>
                         <ul class="feature-list">
                             <li>
                                 <span class="lang-ja">自動車・民生用・農業機械用・重工業用部品の各種ハーネスに対応</span>
-                                <span class="lang-en">We are capable of various harness for automotive, consumer,
-                                    agriculture machine and heavy industrial using parts.</span>
+                                <span class="lang-en">We are capable of various harness for automotive, consumer, agriculture machine and heavy industrial using parts.</span>
+                                <span class="lang-ko">자동차, 소비재, 농업 기계, 중공업용 부품의 다양한 하니스 대응</span>
+                                <span class="lang-zh">对应汽车、消费、农业机械和重工业部件的各种线束</span>
                             </li>
                             <li>
                                 <span class="lang-ja">マルチパートナー体制で様々な端末アプリケーターに対応可能</span>
-                                <span class="lang-en">We can handle various terminal applicators by multi-partner
-                                    system.</span>
+                                <span class="lang-en">We can handle various terminal applicators by multi-partner system.</span>
+                                <span class="lang-ko">멀티 파트너 체제로 다양한 단자 어플리케이터 대응 가능</span>
+                                <span class="lang-zh">通过多合作伙伴体系，可对应各种端子涂抹器</span>
                             </li>
                             <li>
                                 <span class="lang-ja">低いイニシャルコストで小ロット対応が可能</span>
                                 <span class="lang-en">It is possible to handle small LOT with low initial cost.</span>
+                                <span class="lang-ko">낮은 초기 비용으로 소량 로트 대응 가능</span>
+                                <span class="lang-zh">可以通过较低的初始成本对应小批量生产</span>
                             </li>
                             <li>
                                 <span class="lang-ja">圧着アプリケーターや除去工具も取り扱っています</span>
                                 <span class="lang-en">We also handle crimp applicators and removal tools.</span>
+                                <span class="lang-ko">압착 어플리케이터 및 제거 도구도 취급하고 있습니다.</span>
+                                <span class="lang-zh">我们也处理压接涂抹器和拆卸工具。</span>
                             </li>
                         </ul>
                         <div class="assembly-images">
@@ -123,42 +139,42 @@
         <section id="advantage" class="section">
             <div class="container fade-in">
                 <div class="section-header">
-                    <h2><span class="lang-ja">強み</span><span class="lang-en">Advantage</span></h2>
+                    <h2><span class="lang-ja">強み</span><span class="lang-en">Advantage</span><span class="lang-ko">강점</span><span class="lang-zh">优势</span></h2>
                 </div>
 
                 <div class="grid-content">
                     <div class="advantage-card flex-row">
                         <div class="text-content">
-                            <h3><span class="lang-ja">1. グローバルサプライチェーン</span><span class="lang-en">1. Global Supply
-                                    Chain</span></h3>
+                            <h3><span class="lang-ja">1. グローバルサプライチェーン</span><span class="lang-en">1. Global Supply Chain</span><span class="lang-ko">1. 글로벌 공급망</span><span class="lang-zh">1. 全球供应链</span></h3>
                             <p>
                                 <span class="lang-ja">韓国やドイツのグループ企業のほか、各国パートナーとの製品調達によりビジネスをサポートします。</span>
-                                <span class="lang-en">We support your business through product sourcing with various
-                                    countries partners including our group company in Korea and Germany.</span>
+                                <span class="lang-en">We support your business through product sourcing with various countries partners including our group company in Korea and Germany.</span>
+                                <span class="lang-ko">한국과 독일의 그룹사 및 각국 파트너를 통한 제품 조달로 비즈니스를 지원합니다.</span>
+                                <span class="lang-zh">除了我们在韩国和德国的集团公司外，我们还通过与各个国家合作伙伴的产品采购来支持您的业务。</span>
                             </p>
                         </div>
                     </div>
 
                     <div class="advantage-card flex-row">
                         <div class="text-content">
-                            <h3><span class="lang-ja">2. トータルアウトソーシング、在庫管理、配送管理</span><span class="lang-en">2. Total
-                                    outsourcing, Inventory control, Delivery</span></h3>
+                            <h3><span class="lang-ja">2. トータルアウトソーシング、在庫管理、配送管理</span><span class="lang-en">2. Total outsourcing, Inventory control, Delivery</span><span class="lang-ko">2. 종합 아웃소싱, 재고 관리, 배송 관리</span><span class="lang-zh">2. 全面外包、库存控制、交付</span></h3>
                             <p>
                                 <span class="lang-ja">人件費を削減し、倉庫のスペースを節約できます。</span>
                                 <span class="lang-en">You can reduce the labor cost and save space of warehouse.</span>
+                                <span class="lang-ko">인건비를 절감하고 창고 공간을 절약할 수 있습니다.</span>
+                                <span class="lang-zh">您可以降低人力成本并节省仓库空间。</span>
                             </p>
                         </div>
                     </div>
 
                     <div class="advantage-card full-width">
                         <div class="text-content">
-                            <h3><span class="lang-ja">3. ワンストップソリューション</span><span class="lang-en">3. One-stop
-                                    solution</span></h3>
+                            <h3><span class="lang-ja">3. ワンストップソリューション</span><span class="lang-en">3. One-stop solution</span><span class="lang-ko">3. 원스톱 솔루션</span><span class="lang-zh">3. 一站式解决方案</span></h3>
                             <p>
                                 <span class="lang-ja">大手メーカーの電子部品を多数取り扱っています。複数の製品もまとめて見積もり、納品が可能です。</span>
-                                <span class="lang-en">We are handling numbers of electronic components from major
-                                    manufacturers. We can get quotation and deliver all together even those are from
-                                    multiple manufactures.</span>
+                                <span class="lang-en">We are handling numbers of electronic components from major manufacturers. We can get quotation and deliver all together even those are from multiple manufactures.</span>
+                                <span class="lang-ko">주요 제조업체의 수많은 전자 부품을 취급하고 있습니다. 여러 제조업체의 제품이라도 일괄 견적 및 납품이 가능합니다.</span>
+                                <span class="lang-zh">我们经营许多主要制造商的电子元件。即使来自多个制造商，我们也可以一起报价并一起交付。</span>
                             </p>
                         </div>
                         <div class="image-wrapper no-shadow img-small mt-4">
@@ -168,15 +184,12 @@
 
                     <div class="advantage-card full-width">
                         <div class="text-content">
-                            <h3><span class="lang-ja">4. 多くの協力会社、工場</span><span class="lang-en">4. Many cooperative
-                                    companies and factories</span></h3>
+                            <h3><span class="lang-ja">4. 多くの協力会社、工場</span><span class="lang-en">4. Many cooperative companies and factories</span><span class="lang-ko">4. 수많은 협력사 및 공장</span><span class="lang-zh">4. 许多合作公司和工厂</span></h3>
                             <p>
-                                <span
-                                    class="lang-ja">多くの協力企業や工場と取引があります。特定の企業と取引がない場合は我々を利用できます。また海外に多くのサプライヤーがいるため低コストで提供できます。</span>
-                                <span class="lang-en">We have business with many cooperative companies and factories.
-                                    Even if you do not have business with certain manufactures, we can lend our account.
-                                    Also, we have a lot of suppliers in overseas, so we can provide with low
-                                    cost.</span>
+                                <span class="lang-ja">多くの協力企業や工場と取引があります。特定の企業と取引がない場合は我々を利用できます。また海外に多くのサプライヤーがいるため低コストで提供できます。</span>
+                                <span class="lang-en">We have business with many cooperative companies and factories. Even if you do not have business with certain manufactures, we can lend our account. Also, we have a lot of suppliers in overseas, so we can provide with low cost.</span>
+                                <span class="lang-ko">여러 협력사 및 공장과 거래하고 있습니다. 특정 기업과 거래가 없는 경우 당사를 이용할 수 있습니다. 또한 해외에 수많은 공급업체가 있어 저비용으로 제공할 수 있습니다.</span>
+                                <span class="lang-zh">我们与许多合作公司和工厂有业务往来。即使您没有与某些制造商的业务合作，我们也可以借用我们的账户。此外，我们在海外拥有众多供应商，可以提供低成本服务。</span>
                             </p>
                         </div>
                         <div class="image-wrapper shadow mt-4">
@@ -191,47 +204,43 @@
         <section id="profile" class="section bg-light-blue text-main">
             <div class="container fade-in">
                 <div class="section-header">
-                    <h2 class="text-main"><span class="lang-ja">会社概要</span><span class="lang-en">Company Profile</span>
+                    <h2 class="text-main"><span class="lang-ja">会社概要</span><span class="lang-en">Company Profile</span><span class="lang-ko">회사 소개</span><span class="lang-zh">公司简介</span>
                     </h2>
                 </div>
 
                 <table class="profile-table light-theme">
                     <tbody>
                         <tr>
-                            <th><span class="lang-ja">社名</span><span class="lang-en">Company name</span></th>
-                            <td><span class="lang-ja">合同会社 S-KOTO JAPAN</span><span class="lang-en">S-KOTO JAPAN
-                                    LLC</span></td>
+                            <th><span class="lang-ja">社名</span><span class="lang-en">Company name</span><span class="lang-ko">회사명</span><span class="lang-zh">公司名称</span></th>
+                            <td><span class="lang-ja">合同会社 S-KOTO JAPAN</span><span class="lang-en">S-KOTO JAPAN LLC</span><span class="lang-ko">유한책임회사 S-KOTO JAPAN</span><span class="lang-zh">合同会社 S-KOTO JAPAN</span></td>
                         </tr>
                         <tr>
-                            <th><span class="lang-ja">設立</span><span class="lang-en">Established</span></th>
-                            <td><span class="lang-ja">2023年7月</span><span class="lang-en">July 2023</span></td>
+                            <th><span class="lang-ja">設立</span><span class="lang-en">Established</span><span class="lang-ko">설립일</span><span class="lang-zh">成立年份</span></th>
+                            <td><span class="lang-ja">2023年7月</span><span class="lang-en">July 2023</span><span class="lang-ko">2023년 7월</span><span class="lang-zh">2023年7月</span></td>
                         </tr>
                         <tr>
-                            <th><span class="lang-ja">資本金</span><span class="lang-en">Capital</span></th>
-                            <td><span class="lang-ja">1,000千円</span><span class="lang-en">1,000,000 yen</span></td>
+                            <th><span class="lang-ja">資本金</span><span class="lang-en">Capital</span><span class="lang-ko">자본금</span><span class="lang-zh">资本金</span></th>
+                            <td><span class="lang-ja">1,000千円</span><span class="lang-en">1,000,000 yen</span><span class="lang-ko">1,000,000 엔</span><span class="lang-zh">1,000,000 日元</span></td>
                         </tr>
                         <tr>
-                            <th><span class="lang-ja">所在地</span><span class="lang-en">Location</span></th>
-                            <td><span class="lang-ja">山口県長門市深川湯本1323-1</span><span class="lang-en">1323-1 Fukawayumoto,
-                                    Nagato City, Yamaguchi Pref. JAPAN</span></td>
+                            <th><span class="lang-ja">所在地</span><span class="lang-en">Location</span><span class="lang-ko">주소</span><span class="lang-zh">地址</span></th>
+                            <td><span class="lang-ja">山口県長門市深川湯本1323-1</span><span class="lang-en">1323-1 Fukawayumoto, Nagato City, Yamaguchi Pref. JAPAN</span><span class="lang-ko">일본 야마구치현 나가토시 후카와유모토 1323-1</span><span class="lang-zh">日本山口县长门市深川汤本1323-1</span></td>
                         </tr>
                         <tr>
-                            <th><span class="lang-ja">代表</span><span class="lang-en">CEO</span></th>
-                            <td><span class="lang-ja">白木浩一郎</span><span class="lang-en">Koichiro Shiroki</span></td>
+                            <th><span class="lang-ja">代表</span><span class="lang-en">CEO</span><span class="lang-ko">대표</span><span class="lang-zh">代表</span></th>
+                            <td><span class="lang-ja">白木浩一郎</span><span class="lang-en">Koichiro Shiroki</span><span class="lang-ko">시로키 코이치로</span><span class="lang-zh">白木浩一郎</span></td>
                         </tr>
                         <tr>
-                            <th><span class="lang-ja">電話</span><span class="lang-en">TEL</span></th>
-                            <td><a href="tel:09047046308" class="text-link">090-4704-6308</a></td>
+                            <th><span class="lang-ja">電話</span><span class="lang-en">TEL</span><span class="lang-ko">전화번호</span><span class="lang-zh">电话</span></th>
+                            <td><a href="tel:+819047046308" class="text-link"><span class="lang-ja">090-4704-6308</span><span class="lang-en">+81-90-4704-6308</span><span class="lang-ko">+81-90-4704-6308</span><span class="lang-zh">+81-90-4704-6308</span></a></td>
                         </tr>
                         <tr>
-                            <th><span class="lang-ja">メール</span><span class="lang-en">Email</span></th>
+                            <th><span class="lang-ja">メール</span><span class="lang-en">Email</span><span class="lang-ko">이메일</span><span class="lang-zh">电子邮件</span></th>
                             <td><a href="mailto:k-shiroki@s-koto.com" class="text-link">k-shiroki@s-koto.com</a></td>
                         </tr>
                         <tr>
-                            <th><span class="lang-ja">事業</span><span class="lang-en">Business</span></th>
-                            <td><span class="lang-ja">自動車部品の輸出入、製造販売、貿易業、売買業、問屋業、代理業、仲介業、及びコンサルティング業</span><span
-                                    class="lang-en">Import/Export, manufacture and sale of automotive parts, Trading,
-                                    Buying and Selling, Wholesale, Agency, Intermediary and Consulting.</span></td>
+                            <th><span class="lang-ja">事業</span><span class="lang-en">Business</span><span class="lang-ko">주요 사업</span><span class="lang-zh">业务内容</span></th>
+                            <td><span class="lang-ja">自動車部品の輸出入、製造販売、貿易業、売買業、問屋業、代理業、仲介業、及びコンサルティング業</span><span class="lang-en">Import/Export, manufacture and sale of automotive parts, Trading, Buying and Selling, Wholesale, Agency, Intermediary and Consulting.</span><span class="lang-ko">자동차 부품 수출입, 제조 판매, 무역업, 매매업, 도매업, 대리점업, 중개업 및 컨설팅업</span><span class="lang-zh">汽车部件的进出口、制造销售，贸易业、买卖业、批发业、代理业、中介业及咨询业</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -241,45 +250,20 @@
         <section id="contact" class="section">
             <div class="container fade-in">
                 <div class="section-header">
-                    <h2><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact Us</span></h2>
+                    <h2><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact Us</span><span class="lang-ko">문의하기</span><span class="lang-zh">联系我们</span></h2>
                 </div>
                 <div class="contact-form-wrapper">
                     <p class="text-center" style="margin-bottom: 2rem;">
                         <span class="lang-ja">製品・サービスに関するご質問や、お取引についてのご相談はお気軽にお問い合わせください。</span>
-                        <span class="lang-en">Please feel free to contact us with any questions about our
-                            products/services, or to discuss business opportunities.</span>
+                        <span class="lang-en">Please feel free to contact us with any questions about our products/services, or to discuss business opportunities.</span>
+                        <span class="lang-ko">제품 및 서비스에 관한 질문이나 거래에 관한 상담은 부담 없이 문의해 주십시오.</span>
+                        <span class="lang-zh">如果您对我们的产品和服务有任何疑问，或想讨论业务合作，请随时与我们联系。</span>
                     </p>
-                    <form class="contact-form" onsubmit="event.preventDefault(); alert('お問い合わせを受け付けました。（テスト用）');">
-                        <div class="form-group">
-                            <label for="name">
-                                <span class="lang-ja">お名前</span><span class="lang-en">Name</span>
-                                <span class="required"><span class="lang-ja">必須</span><span
-                                        class="lang-en">Req</span></span>
-                            </label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">
-                                <span class="lang-ja">メールアドレス</span><span class="lang-en">Email</span>
-                                <span class="required"><span class="lang-ja">必須</span><span
-                                        class="lang-en">Req</span></span>
-                            </label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">
-                                <span class="lang-ja">お問い合わせ内容</span><span class="lang-en">Message</span>
-                                <span class="required"><span class="lang-ja">必須</span><span
-                                        class="lang-en">Req</span></span>
-                            </label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="form-submit">
-                            <button type="submit" class="cta-button">
-                                <span class="lang-ja">送信する</span><span class="lang-en">Submit</span>
-                            </button>
-                        </div>
-                    </form>
+                    <div class="text-center">
+                        <a href="mailto:k-shiroki@s-koto.com" class="cta-button" style="display: inline-block;">
+                            <span class="lang-ja">メールでお問い合わせ</span><span class="lang-en">Contact via Email</span><span class="lang-ko">이메일로 문의</span><span class="lang-zh">通过电子邮件联系</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -287,23 +271,18 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 S-KOTO JAPAN LLC. All Rights Reserved.</p>
+            <p>&copy; S-KOTO JAPAN LLC. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Language Toggle Logic
-        function toggleLanguage() {
+        // Language Selection Logic
+        function setLanguage(lang) {
             const body = document.body;
-            if (body.classList.contains('lang-ja-active')) {
-                body.classList.remove('lang-ja-active');
-                body.classList.add('lang-en-active');
-                document.documentElement.lang = 'en';
-            } else {
-                body.classList.remove('lang-en-active');
-                body.classList.add('lang-ja-active');
-                document.documentElement.lang = 'ja';
-            }
+            body.classList.remove('lang-ja-active', 'lang-en-active', 'lang-ko-active', 'lang-zh-active');
+            body.classList.add(`lang-${lang}-active`);
+            document.documentElement.lang = lang;
+            document.getElementById('lang-select').value = lang;
         }
 
         // Mobile Menu Logic
